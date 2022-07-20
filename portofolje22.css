@@ -1,0 +1,814 @@
+
+/* Basic styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #F9F7F3;
+    color: #282828;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Prata', serif;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+
+  h3 {
+    font-size: 20px;
+  }
+
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+  }
+
+
+  body {
+    font-size: 16px;
+  }
+
+
+  /* Nav meny */
+
+  nav {
+    border-bottom: 1px solid #282828;
+    position: sticky;
+    top: 0px;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .current {
+    text-decoration: underline;
+  }
+
+
+  .logo {
+    font-size: 20px;
+    font-family: 'Prata', serif;
+    font-weight: 200;
+    text-decoration: none;
+  }
+
+
+  .item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+  }
+
+
+  /* Mobil menu */
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .menu li a {
+    display: block;
+    padding: 1em 1em;
+  }
+
+
+  .toggle {
+    order: 1;
+    font-size: 20px;
+  }
+
+
+  .item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none; /*Her skjules menyen*/
+    
+  }
+
+
+  .active .item {
+    display: block;
+  }
+
+
+
+    /* Hjemside/forside */
+
+
+  header {
+    border-bottom: 1px solid #282828;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+  }
+
+
+  #hei_jeg_heter {
+    font-size: 28px;
+  }
+
+
+  #hovedoverskrift {
+    font-size: 32px;
+    padding-bottom: 0.8em;
+  }
+
+
+  #beskrivelse_header {
+    font-size: 18px;
+    padding-bottom: 2.3em;
+  }
+
+
+  .om_meg_forside {
+    padding: 3em 1em;
+    line-height: 140%;
+  }
+
+  .om_meg_forside h3 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+  }
+
+  .om_meg_forside h4 {
+    padding-bottom: 0.5em;
+  }
+
+  .prosjekt_infobokser h3 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+  }
+
+  .om_prosjektet_seksjon h2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+  }
+
+  
+  .hvem_er_jeg_boks {
+
+    border: solid 1px #282828;
+    padding: 1em 1em;
+    margin: 1em 2.5em;
+    margin-top: 2.5em;
+    height: 16.5em;
+  }
+
+ 
+  .ferdigheter_og_egenskaper {
+    border: solid 1px #282828;
+    padding: 1em 1em;
+    margin: 1em 2.5em;
+  }
+
+  .ferdigheter_og_egenskaper p {
+    padding-bottom: 0.5em;
+  }
+
+  .ferdigheter_og_egenskaper_prosjekt {
+    border: solid 1px #282828;
+    padding: 1em 1em;
+    margin: 1em 2.5em;
+  }
+
+  .ferdigheter_og_egenskaper_prosjekt p {
+    padding-bottom: 0.5em;
+  }
+
+
+  .seksjon_ferdigheter_egenskaper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prosjekt_infobokser {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+
+  .header_bilde_forside img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .forside_bilde_vilde img {
+    object-fit: cover;
+    border: solid 1px #282828; 
+}
+
+
+/*Seksjonen for de tre bildene på forsiden*/
+
+  .forside_bildeseksjon { 
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    padding: 3em 1em;
+    border-top: solid 1px #282828;
+}
+
+
+.box_forside_bildeseksjon img {
+    width: 100%;
+    height: 25em;
+}
+
+
+.box_forside_bilder img {
+  object-fit: cover;
+  border: solid 1px #282828; 
+}
+
+
+#bilde_tekst {
+  font-size: 14px;
+  padding-top: 0.5em;
+}
+
+.bilde_og_bildetekst {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Underside - Prosjekter */
+
+.liste_prosjekter { 
+  line-height: 140%;
+}
+
+.om_prosjektet_seksjon {
+  line-height: 140%;
+  border-bottom: solid 1px #282828;
+}
+
+.liste_prosjekter h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; 
+}
+
+.container_prosjektbokser {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 2.5em;
+  gap: 2em;
+}
+
+.prosjekt_bilde {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#figma_preview {
+  border: none;
+}
+
+.bilde_box_prosjekt { 
+  height: 18em;
+  border: solid 1px #282828;  
+  margin-top: 1.5em; 
+ 
+}
+
+.bilde_box_prosjektet { 
+  height: 18em;
+  margin-top: 1.5em; 
+  border: solid 1px #282828; 
+ 
+}
+
+#video {
+  border: none;
+}
+
+
+.prosjekt_beskrivelse_box {
+  /* Må være lik størrelse som prosjekt_bilde_box */
+  height: 18em;
+  border: solid 1px #282828;  
+}
+
+
+.prosjekt_beskrivelse_box_noborder {
+  /* Må være lik størrelse som prosjekt_bilde_box */
+  display: flex;
+  flex-direction: column;
+}
+
+.prosjekt_beskrivelse_box_noborder a {
+text-decoration: underline;
+}
+
+
+
+#prosjektbeskrivelse_overskrift {
+  padding-top: 1.5em;
+  padding-left: 1em;
+}
+
+
+
+#prosjektbeskrivelse_paragraf {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+}
+
+#nyss {
+  padding: 3em 1em
+}
+
+#stedet {
+  border-top: solid 1px #282828;
+  padding: 3em 1em
+}
+
+#vitmerno {
+  border-top: solid 1px #282828;
+  padding: 3em 1em
+}
+
+#eldhus {
+  border-top: solid 1px #282828;
+  padding: 3em 1em
+}
+
+
+#infridge {
+  border-top: solid 1px #282828;
+  padding: 3em 1em
+}
+
+#nym {
+  border-top: solid 1px #282828;
+  padding: 3em 1em
+}
+
+
+/* Underside - CV */
+
+
+
+.utdannelse {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 1em;
+  border-bottom: solid 1px #282828;
+  line-height: 140%;
+}
+
+.utdannelse h2 {
+  padding-bottom: 0.5em;
+}
+
+.utdannelse ul {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+/* Underside kontakt meg */
+
+.kontakt_metoder_seksjon {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 1em;
+}
+
+.kontakt_metoder_seksjon h2 {
+  padding-bottom: 0.5em;
+}
+
+.kontakt_metoder_liste {
+  list-style-type: none;
+  line-height: 250%;
+  font-size: 24px;
+
+}
+
+
+
+/* Sist oppdatert seksjon */
+
+  .sist_oppdatert {
+    border-top: solid 1px #282828;
+    border-bottom: solid 1px #282828;
+    font-size: 14px;
+    text-align: center;
+    padding: 1em 1em;
+  }
+
+
+  /*Footer*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid 1px #282828;
+    padding: 2em 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+  }
+
+  .nav_footer {
+    list-style-type: none;
+  }
+
+  footer a {
+    text-decoration: underline;
+  }
+
+  .linker_footer {
+    padding-top: 1em;
+    line-height: 140%;
+  }
+
+
+  
+  /* Tablet storrelse */
+
+  @media all and (min-width: 650px) {
+
+    body {
+      font-size: 18px;
+    }
+
+    #beskrivelse_header {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    h3 {
+      font-size: 22px;
+    }
+
+     /* Tablet menu */
+
+    .menu {
+      justify-content: center;
+    }
+
+
+    .logo {
+      flex: 1;
+      font-size: 22px;
+    }
+
+
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+
+    /* Nav */
+
+    nav {
+      padding: 0.5em 2em
+    }
+
+    /* Header */
+
+    header {
+      padding: 3em 3em;
+      flex-direction: row;
+      align-items: center;
+      gap: 3.5em;
+    }
+
+    .header_bilde_forside img {
+      width: 17em;
+      height: 11em;
+    }
+
+ 
+    #navn {
+      padding-bottom: 0.5em;
+    }
+
+    #beskrivelse_header {
+      padding-bottom: 0em;
+    }
+
+
+    /* Om meg seksjon - forside */
+
+    .om_meg_forside {
+      padding: 3em 3em;
+    }
+
+    .utdannelse {
+      padding: 3em 3em;
+    }
+
+    .seksjon_ferdigheter_egenskaper {
+      flex-direction: row;
+      gap: 1.5em;
+    }
+
+    .prosjekt_infobokser {
+      flex-direction: row;
+      gap: 1.5em;
+      padding: 3em 3em;
+    }
+
+    .hvem_er_jeg_boks {
+      padding: 1em 1em;
+      margin: 0em;
+      margin-top: 2.5em;
+      height: 9.5em;
+    }
+
+    .tekst_arbeidserfaring {
+      flex-direction: row;
+    }
+
+    .ferdigheter_og_egenskaper {
+      padding: 1em 1em;
+      margin: 0em;
+      margin-top: 1.5em;
+      width: 50%;
+      
+  } 
+
+  .ferdigheter_og_egenskaper_prosjekt {
+    padding: 1em 1em;
+    margin: 0em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 50%;
+    
+} 
+
+  /* Bildeseksjon - forside */
+
+  .forside_bildeseksjon {
+    flex-direction: row;
+    gap: 1.53em;
+    padding: 3em 3em;
+  }
+
+  .box_forside_bildeseksjon img {
+    height: 15em;
+  }
+
+  #bilde_tekst {
+    font-size: 16px;
+  }
+
+  .bilde_og_bildetekst {
+    width: 33%;
+  }
+
+  .sist_oppdatert {
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 3em;
+  }
+
+  /* Prosjekter underside */
+
+  .container_prosjektbokser {
+    flex-direction: row;
+  }
+
+  .bilde_box_prosjekt {
+    width: 50%;
+    margin: 0;
+  }
+
+  .bilde_box_prosjektet {
+    width: 50%;
+    margin: 0;
+  }
+
+  .prosjekt_beskrivelse_box {
+    width: 50%;
+  }
+
+  .prosjekt_beskrivelse_box_noborder {
+    width: 50%;
+    justify-content: center;
+  }
+
+  #prosjektnavn {
+    margin-left: 1.8em;
+    margin-bottom: 1.8em;
+  }
+
+  /* Underside - kontakt meg */
+
+.kontakt_metoder_seksjon {
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 3em 3em;
+  align-items: center;
+  }
+  
+  .kontakt_metoder_seksjon h2 {
+    width: 40%;
+  }
+
+
+}
+
+
+
+  /* Desktop storrelse */
+
+  @media all and (min-width: 960px) {
+
+     /* Desktop menu */
+
+    .menu {
+      flex-wrap: nowrap;
+      background: none;
+    }
+
+
+    .logo {
+      order: 0;
+    }
+
+
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+
+
+    .toggle {
+      display: none;
+    }
+
+
+    nav {
+      padding: 0.5em 3.5em;
+    }
+
+    header {
+      padding: 5em 10em;
+      gap: 1.5em;
+    }
+
+    .header_bilde_forside img {
+      width: 16em;
+      height: 9em;
+
+    }
+
+    .om_meg_forside {
+      padding: 3em 10em;
+    }
+
+    .utdannelse {
+      padding: 5em 15em;
+      flex-direction: row;
+      align-items: center;
+      gap: 2em;
+    }
+
+    .utdannelse h2 {
+      width: 50%;
+    }
+
+    .utdannelse_beskrivelse {
+      width: 50%;
+    }
+
+    .hvem_er_jeg_boks {
+      padding: 2em 3em;
+    }
+
+    .ferdigheter_og_egenskaper {
+      padding: 2em 3em;
+    }
+
+    .ferdigheter_og_egenskaper_prosjekt {
+      padding: 2em 3em;
+    }
+
+    .forside_bildeseksjon {
+      padding: 3em 10em;
+    }
+
+    /* Prosjekter - underside */
+
+
+    #nyss {
+      padding: 3em 10em;
+    }
+
+    #stedet {
+      padding: 3em 10em;
+    }
+
+    #vitmerno {
+      padding: 3em 10em;
+    }
+
+    #eldhus {
+      padding: 3em 10em;
+    }
+
+    #infridge {
+      padding: 3em 10em;
+    }
+
+    #nym {
+      padding: 3em 10em;
+    }
+
+    .prosjekt_infobokser{
+      padding: 3em 10em;
+    }
+
+    .kontakt_metoder_seksjon {
+      padding: 5em 10em;
+      justify-content: space-evenly;
+    
+    
+    }
+    
+    .kontakt_metoder_seksjon h2 {
+      width: 25%;
+    }
+
+  
+}
+
+
+
+@media all and (min-width: 1100px) {
+
+ 
+  .header_bilde_forside img {
+    width: 21em;
+    height: 13em;
+  }
+
+  .box_forside_bildeseksjon img {
+    height: 18em;
+  }
+
+}
+
+
+@media all and (min-width: 1300px) {
+
+  header {
+    gap: 7.5em;
+  }
+
+  .header_bilde_forside img {
+    width: 28em;
+    height: 15em;
+  }
+
+  .hvem_er_jeg_boks {
+    padding: 3em 5em;
+  }
+
+  .ferdigheter_og_egenskaper {
+    padding: 3em 5em;
+  }
+
+  .ferdigheter_og_egenskaper_prosjekt {
+    padding: 3em 5em;
+  }
+
+}
