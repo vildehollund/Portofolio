@@ -163,10 +163,12 @@
 
   
   .hvem_er_jeg_boks {
+
     border: solid 1px #282828;
     padding: 1em 1em;
     margin: 1em 2.5em;
     margin-top: 2.5em;
+    height: 16.5em;
   }
 
  
@@ -305,8 +307,8 @@
 
 .prosjekt_beskrivelse_box {
   /* Må være lik størrelse som prosjekt_bilde_box */
+  height: 18em;
   border: solid 1px #282828;  
-  padding-bottom: 2em;
 }
 
 
