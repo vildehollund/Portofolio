@@ -156,7 +156,7 @@
     padding-bottom: 0.5em; 
   }
 
-/*Tok bort height for å unngå at tekst renner ut av boksen */
+/*Tok bort height for å unngå tekst sklir ut av boks */
   .hvem_er_jeg_boks {
     border: solid 1px #282828;
     padding: 1em 1em;
