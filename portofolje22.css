@@ -81,7 +81,6 @@
   }
 
 
-
   .menu li a {
     display: block;
     padding: 1em 1em;
@@ -98,8 +97,7 @@
     order: 2;
     width: 100%;
     text-align: center;
-    display: none; /*Her skjules menyen*/
-    
+    display: none; /*Her skjules menyen*/ 
   }
 
 
@@ -107,10 +105,7 @@
     display: block;
   }
 
-
-
     /* Hjemside/forside */
-
 
   header {
     border-bottom: 1px solid #282828;
@@ -161,7 +156,7 @@
     padding-bottom: 0.5em; 
   }
 
-  
+/*Tok bort height for å unngå at tekst renner ut av boksen */
   .hvem_er_jeg_boks {
     border: solid 1px #282828;
     padding: 1em 1em;
